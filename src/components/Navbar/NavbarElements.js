@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   background: #000;
   font-size: 1rem;
 
