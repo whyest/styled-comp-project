@@ -1,0 +1,51 @@
+export const homeObjOne = {
+  id: 'about',
+  topLine: 'Top line ONE',
+  headline: 'This is Title One',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet vestibulum lorem sed.',
+  buttonLabel: 'Get started',
+  imgStart: false,
+  img: require('../../images/electric_car.svg').default,
+  alt: 'Electric car',
+  lightBg: false,
+  lightText: true,
+  lightTextDescr: true,
+  dark: true,
+  primary: true,
+  darkText: false,
+}
+export const homeObjTwo = {
+  id: 'discover',
+  topLine: 'Top line Two',
+  headline: 'This is Title Two',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet vestibulum lorem sed.',
+  buttonLabel: 'Learn more',
+  imgStart: true,
+  img: require('../../images/interior_design.svg').default,
+  alt: 'Interior design',
+  lightBg: true,
+  lightText: false,
+  lightTextDescr: false,
+  dark: false,
+  primary: false,
+  darkText: true,
+}
+export const homeObjThree = {
+  id: 'signup',
+  topLine: 'Top line THREE',
+  headline: 'This is Title Three',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet vestibulum lorem sed.',
+  buttonLabel: 'Learn more',
+  imgStart: false,
+  img: require('../../images/online_learning.svg').default,
+  alt: 'Online learning',
+  lightBg: true,
+  lightText: false,
+  lightTextDescr: false,
+  dark: false,
+  primary: true,
+  darkText: true,
+}
