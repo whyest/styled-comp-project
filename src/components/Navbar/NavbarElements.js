@@ -11,9 +11,8 @@ export const Nav = styled.nav`
   z-index: 10;
   height: 80px;
   margin-top: -80px;
-  background: #000;
+  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   font-size: 1rem;
-
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
