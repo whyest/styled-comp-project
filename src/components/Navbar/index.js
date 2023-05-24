@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { HashLink } from 'react-router-hash-link'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll'
@@ -46,55 +47,64 @@ const Navbar = ({ toggle }) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks
-                  to='about'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                  activeClass='active'
-                >
-                  About
+                <NavLinks>
+                  <HashLink
+                    to='#about'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    activeClass='active'
+                  >
+                    About
+                  </HashLink>
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to='discover'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                  activeClass='active'
-                >
-                  Discover
+                <NavLinks>
+                  <HashLink
+                  // className='nav-link'
+                    to='#discover'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    activeClass='active'
+                  >
+                    Discover
+                  </HashLink>
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to='services'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                  activeClass='active'
-                >
-                  Services
+                <NavLinks>
+                  <HashLink
+                    to='#services'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    activeClass='active'
+                  >
+                    Services
+                  </HashLink>
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to='signup'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                  activeClass='active'
-                >
-                  Sign up
+                <NavLinks>
+                  <HashLink
+                    to='#signup'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    activeClass='active'
+                  >
+                    Sign up
+                  </HashLink>
                 </NavLinks>
               </NavItem>
             </NavMenu>

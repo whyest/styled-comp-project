@@ -1,7 +1,7 @@
 export const homeObjOne = {
   id: 'about',
   topLine: 'Top line ONE',
-  headline: 'This is Title One',
+  headline: 'This is the About section',
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet vestibulum lorem sed.',
   buttonLabel: 'Get started',
@@ -18,7 +18,7 @@ export const homeObjOne = {
 export const homeObjTwo = {
   id: 'discover',
   topLine: 'Top line Two',
-  headline: 'This is Title Two',
+  headline: 'This is the Discover section',
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet vestibulum lorem sed.',
   buttonLabel: 'Learn more',
@@ -35,7 +35,7 @@ export const homeObjTwo = {
 export const homeObjThree = {
   id: 'signup',
   topLine: 'Top line THREE',
-  headline: 'This is Title Three',
+  headline: 'This is Signup section',
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet vestibulum lorem sed.',
   buttonLabel: 'Learn more',
@@ -46,6 +46,6 @@ export const homeObjThree = {
   lightText: false,
   lightTextDescr: false,
   dark: false,
-  primary: true,
+  primary: false,
   darkText: true,
 }
