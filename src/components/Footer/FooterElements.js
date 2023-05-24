@@ -95,16 +95,22 @@ export const SocialLogo = styled(Link)`
   display: flex;
   align-items: center;
   justify-self: start;
-  margin-bottom: 16px;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
+
+  @media screen and (max-width: 820px) {
+    margin-bottom: 16px;
+  }
 `
 
 export const WebsiteRights = styled.small`
   color: #fff;
-  margin-bottom: 16px;
+
+  @media screen and (max-width: 820px) {
+    margin-bottom: 16px;
+  }
 `
 
 export const SocialIcons = styled.div`

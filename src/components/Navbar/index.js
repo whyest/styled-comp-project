@@ -49,6 +49,7 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks>
                   <HashLink
+                    className='nav-link'
                     to='#about'
                     smooth={true}
                     duration={500}
@@ -64,7 +65,7 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks>
                   <HashLink
-                  // className='nav-link'
+                    className='nav-link'
                     to='#discover'
                     smooth={true}
                     duration={500}
@@ -80,6 +81,7 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks>
                   <HashLink
+                    className='nav-link'
                     to='#services'
                     smooth={true}
                     duration={500}
@@ -95,6 +97,7 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks>
                   <HashLink
+                    className='nav-link'
                     to='#signup'
                     smooth={true}
                     duration={500}

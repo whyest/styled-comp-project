@@ -5,7 +5,20 @@
   font-family: 'Encode Sans Expanded', sans-serif;
 }
 
-/* .nav-link {
-  color: red;
+.nav-link {
+  display: flex;
+  align-items: center;
+  border: 3px solid transparent;
+  height: 100%;
+  padding: 0 1rem;
+  color: #fff;
   text-decoration: none;
-} */
+  cursor: pointer;
+  transition: border 0.3s ease-in-out;
+}
+.nav-link .active {
+  border-bottom: 3px solid #01bf71;
+}
+.nav-link:hover {
+  border-bottom: 3px solid #01bf71;
+}
