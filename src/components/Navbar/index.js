@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
+import { animateScroll as scroll } from 'react-scroll'
 import {
   Nav,
   NavLogo,
@@ -28,27 +29,73 @@ const Navbar = ({ toggle }) => {
     window.addEventListener('scroll', changeNav)
   }, [])
 
+  function toggleHome() {
+    scroll.scrollToTop()
+  }
+
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to='/'>Fancy Logo</NavLogo>
+            <NavLogo to='/' onClick={toggleHome}>
+              Fancy Logo
+            </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to='about'>About</NavLinks>
+                <NavLinks
+                  to='about'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                  activeClass='active'
+                >
+                  About
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='discover'>Discover</NavLinks>
+                <NavLinks
+                  to='discover'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                  activeClass='active'
+                >
+                  Discover
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='services'>Services</NavLinks>
+                <NavLinks
+                  to='services'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                  activeClass='active'
+                >
+                  Services
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='signup'>Sign up</NavLinks>
+                <NavLinks
+                  to='signup'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                  activeClass='active'
+                >
+                  Sign up
+                </NavLinks>
               </NavItem>
             </NavMenu>
 

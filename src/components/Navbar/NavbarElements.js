@@ -73,15 +73,20 @@ export const NavItem = styled.li`
 export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
+  border: 3px solid transparent;
   height: 100%;
   padding: 0 1rem;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  transition: border 0.3s ease-in-out;
 
   &.active {
     border-bottom: 3px solid #01bf71;
   }
+  /* &:hover {
+    border-bottom: 3px solid #01bf71;
+  } */
 `
 
 export const NavBtn = styled.nav`
