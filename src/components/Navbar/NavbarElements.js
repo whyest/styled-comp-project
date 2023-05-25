@@ -84,6 +84,10 @@ export const NavLinks = styled(LinkS)`
   text-decoration: none;
   cursor: pointer;
   transition: border 0.3s ease-in-out;
+
+  & .active {
+    border: 3px solid red;
+  }
 `
 
 export const NavBtn = styled.nav`
