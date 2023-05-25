@@ -49,14 +49,13 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks>
                   <HashLink
-                    className='nav-link'
+                    className='nav-hash-link'
+                    smooth
                     to='#about'
-                    smooth={true}
                     duration={500}
                     spy={true}
                     exact='true'
                     offset={-80}
-                    activeClass='active'
                   >
                     About
                   </HashLink>
@@ -65,14 +64,13 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks>
                   <HashLink
-                    className='nav-link'
+                    className='nav-hash-link'
+                    smooth
                     to='#discover'
-                    smooth={true}
                     duration={500}
                     spy={true}
                     exact='true'
                     offset={-80}
-                    activeClass='active'
                   >
                     Discover
                   </HashLink>
@@ -81,14 +79,13 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks>
                   <HashLink
-                    className='nav-link'
+                    className='nav-hash-link'
+                    smooth
                     to='#services'
-                    smooth={true}
                     duration={500}
                     spy={true}
                     exact='true'
                     offset={-80}
-                    activeClass='active'
                   >
                     Services
                   </HashLink>
@@ -97,14 +94,13 @@ const Navbar = ({ toggle }) => {
               <NavItem>
                 <NavLinks>
                   <HashLink
-                    className='nav-link'
+                    className='nav-hash-link'
+                    smooth
                     to='#signup'
-                    smooth={true}
                     duration={500}
                     spy={true}
                     exact='true'
                     offset={-80}
-                    activeClass='active'
                   >
                     Sign up
                   </HashLink>

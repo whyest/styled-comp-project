@@ -68,6 +68,10 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+
+  &:hover {
+    border-bottom: 3px solid #01bf71;
+  }
 `
 
 export const NavLinks = styled(LinkS)`
@@ -80,10 +84,6 @@ export const NavLinks = styled(LinkS)`
   text-decoration: none;
   cursor: pointer;
   transition: border 0.3s ease-in-out;
-
-  &.active {
-    border-bottom: 3px solid #01bf71;
-  }
 `
 
 export const NavBtn = styled.nav`
